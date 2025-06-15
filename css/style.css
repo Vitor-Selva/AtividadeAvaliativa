@@ -1,0 +1,114 @@
+/* 
+ * ESTILOS DO MENU OFF-CANVAS (PARA MOBILE)
+ * Define a aparência do menu lateral que aparece em telas pequenas
+ */
+ .offcanvas {
+    background-color: blanchedalmond !important; /* Cor de fundo */
+    width: 75% !important; /* Largura do menu lateral (75% da tela) */
+}
+
+/* 
+ * BOTÃO DO MENU HAMBURGUER
+ * Estilização do botão que abre o menu em mobile
+ */
+.navbar-toggler.d-lg-none {
+    position: absolute; /* Posicionamento absoluto em relação ao header */
+    right: 1rem; /* Distância da borda direita */
+}
+
+/* 
+ * BARRA DE NAVEGAÇÃO PRINCIPAL
+ * Estilos para a navbar em todas as telas
+ */
+.minha-navbar {
+    background-color: blanchedalmond; /* Cor de fundo */
+    position: relative; /* Contexto de posicionamento */
+    z-index: 10; /* Garante que a navbar fique acima de outros elementos */
+    padding: 1rem 2rem; /* Espaçamento interno */
+    border-radius: 0 0 10px 10px; /* Bordas arredondadas apenas na parte inferior */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+/* 
+ * MENU EXPANDIDO (PARA MOBILE)
+ * Estilização do menu quando expandido em telas pequenas
+ */
+.navbar-collapse {
+    background-color: blanchedalmond; /* Cor de fundo igual à navbar */
+    border-radius: 10px 10px 10px 10px; /* Bordas arredondadas */
+}
+
+/* 
+ * CONTAINER FLUIDO
+ * Define a altura do container da navbar
+ */
+.container-fluid{
+    height: 9em; /* Altura fixa */
+}
+
+/* 
+ * LOGO DA MARCA
+ * Estilização da imagem do logo
+ */
+.ClothesClothes{
+    width: 11em; /* Largura fixa */    
+    margin-right: 2em; /* Margem à direita */
+}
+
+/* 
+ * ITENS DO MENU
+ * Estilização dos itens individuais do menu
+ */
+.nav-item{
+    margin-right: 0.5em; /* Espaçamento entre itens */
+}
+
+/* 
+ * MENU DROPDOWN
+ * Estilização do menu suspenso
+ */
+.dropdown-menu{
+    background-color: blanchedalmond; /* Cor de fundo */
+}
+
+/* 
+ * LINKS DO MENU
+ * Estilização dos links de navegação
+ */
+.nav-link {
+    font-size: 1.3rem; /* Tamanho da fonte */
+    padding: 0.5rem 1rem; /* Espaçamento interno */
+    transition: color 0.3s ease; /* Transição suave para hover */
+}
+
+/* Efeito hover nos links */
+.nav-link:hover {
+    color: #333; /* Cor do texto ao passar o mouse */
+    text-decoration: underline; /* Sublinhado ao passar o mouse */
+}
+
+/* 
+ * MENU DROPDOWN (ESTILOS ADICIONAIS)
+ * Aperfeiçoamento da aparência do menu suspenso
+ */
+.dropdown-menu {
+    background-color: blanchedalmond; /* Cor de fundo */
+    border-radius: 12px; /* Bordas mais arredondadas */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra mais pronunciada */
+    border: none; /* Remove borda padrão */
+}
+
+/* 
+ * CARROSSEL
+ * Estilização dos itens do carrossel
+ */
+.carousel-item {
+    height: 70vh; /* Altura relativa à viewport */
+}
+
+/* Imagens do carrossel */
+.carousel-item img {
+    width: 100%; /* Largura total */
+    height: 100%; /* Altura total */
+    object-fit: cover; /* Garante que a imagem cubra todo o espaço */
+}
