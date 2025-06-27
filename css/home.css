@@ -8,17 +8,17 @@
  * Define a aparência do menu lateral que aparece em telas pequenas
  */
  .offcanvas {
-    background-color: blanchedalmond !important; /* Cor de fundo */
-    width: 75% !important; /* Largura do menu lateral (75% da tela) */
+    background-color: blanchedalmond !important;
+    width: 75% !important; 
 }
 
 /* 
  * BOTÃO DO MENU HAMBURGUER (botão que abre o offcanvas)
  * Estilização do botão que abre o menu em mobile
  */
-.navbar-toggler.d-lg-none {
-    position: absolute; /* Posicionamento absoluto em relação ao header */
-    right: 1rem; /* Distância da borda direita */
+.navbar-toggler.d-lg-none { 
+    position: absolute;
+    right: 1rem;
 }
 
 /* 
@@ -26,16 +26,12 @@
  * Estilos para a navbar em todas as telas
  */
 .minha-navbar {
-    background-color: blanchedalmond; /* Cor de fundo */
-    padding: 1rem 2rem; /* Espaçamento interno */
+    background-color: blanchedalmond;
+    padding: 1rem 2rem;
 }
 
-/* 
- * BARRA DE NAVEGAÇÃO
- * Define a altura do container da navbar
- */
 .container-fluid{
-    height: 9em; /* Altura fixa */
+    height: 9em; 
 }
 
 /* 
@@ -47,33 +43,20 @@
     margin-right: 4em;
 }
 
-/* 
- * ITENS DO MENU
- * Estilização dos itens individuais do menu
- */
 .nav-item{
-    margin-right: 0.5em; /* Espaçamento entre itens */
+    margin-right: 0.5em; 
 }
 
-/* 
- * LINKS DO MENU
- * Estilização dos links de navegação
- */
 .nav-link {
     font-size: 1.3rem;
     padding: 0.5rem 1rem;
     color: black;
 }
 
-/* Efeito hover nos links */
 .nav-link:hover {
     color: #a3a2a2; 
 }
 
-/* 
- * CARROSSEL
- * Estilização dos itens do carrossel
- */
 .carousel-item {
     height: 55vh; /* Altura relativa à viewport */
 }
@@ -97,20 +80,25 @@
 
 /* Garante que todos os cards tenham a mesma altura */
 .card {
-    height: 100%; /* Garante que todos os cards ocupem a mesma altura máxima */
+    height: 100%;
 }
 
 /* Garante que todas as imagens dentro dos cards tenham o mesmo tamanho */
 .card img {
-    width: 100%; /* A imagem ocupa toda a largura do card */
-    height: 250px; /* Altura fixa — pode ajustar conforme quiser */
+    width: 100%;
+    height: 250px;
     object-fit: cover; /* Corta a imagem para preencher sem distorcer */
-    border-radius: 0.5rem; /* Adiciona bordas simples nos cards*/
+    border-radius: 0.5rem;
   }
 
 /* Faz com que as categorias e os cards fiquem lado a lado */
 .secao-categorias-maisvendidos {
     display: flex;
+}
+
+/* faz com que em telas mobile fique centralizado */
+.mais-vendidos {
+    width: 100%;        
 }
 
 /* Seta um tamanho para o container das categorias */
@@ -119,16 +107,16 @@
 }
 
 /* Usa o media query para setar um valor máximo de pixels que as categorias podem ficar visíveis, ou seja, retira elas do modo mobile */
-@media (max-width: 600px) {
+@media (max-width: 880px) {
     .categorias {
-      display: none; /* Nenhuma exibição */
+      display: none;
     }
   }
 
 /* Usado para estilizar a posição de todo o texto de categorias */
 .texto-categorias {
     text-align: center;
-    margin-top: 10em;
+    margin-top: 5em;
 }
 
 /* Usado para estilizar os links de categorias */
@@ -139,7 +127,7 @@
 
 /* tira os estilos que vem por padrão nas listas da tag ul*/
 .ul-lista-categorias {
-    list-style: none; /*Remove as bolinhas (marcadores)*/
+    list-style: none;
     padding: 0;
     margin: 2.8em;
 }
@@ -153,6 +141,63 @@
   /* Garante que o corpo ocupe o espaço restante, mantendo tamanho uniforme */
   .card-body {
     flex-grow: 1; /* Faz com que esse bloco cresça para preencher o card */
-    flex-direction: column; /* Organização vertical: nome em cima, preço embaixo */
+    flex-direction: column;
     justify-content: space-between; /* Espaça o conteúdo de forma uniforme */
+    padding: 0.75rem; /* Reduz o padding interno */
+    
   }
+
+@media (max-width: 576px) {
+    .card img {
+        height: 180px;
+    }
+    .card {
+        margin-bottom: 15px;
+    }
+    /* Ajuste no container para evitar espaçamento estranho */
+    .row.g-3 {
+        --bs-gutter-x: 0.5rem; /* Reduz o espaçamento horizontal */
+
+    }
+}
+.card-text, .card-body p {
+    white-space: nowrap; /* Evita quebra de linha */
+    overflow: hidden;
+    text-overflow: ellipsis; /* Adiciona "..." se o texto for muito longo */
+}
+
+.novidades-album {
+    background-color: #dddddd !important; 
+}
+
+.novidades {
+    border: 4px solid rgb(231, 231, 231);
+}
+
+/* css para o filtro de preço montado com elementos html */
+.filtro {
+    margin-top: 6em;
+}
+
+.form-range {
+    width: 315px;
+    margin-top: 1em;
+}
+
+.form-control {
+    width: 150px;
+    margin: auto;
+}   
+
+.filtro-input {
+    display: inline-flex;
+    gap: 20px;
+    margin-top: 1em;
+}
+
+.botao {
+    width: 600px;
+    text-align: center;
+    margin-left: 127px;
+    margin-top: 1em;
+}

@@ -1,0 +1,171 @@
+/* Estilos para a seção de categorias */
+.secao-categorias {
+    background-color: #f8f9fa;
+    padding: 2rem 0em;
+}
+
+.secao-categorias .container {
+    margin-top: 2em;
+}
+
+.lista-categorias {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.8rem;
+    padding: 0;
+    list-style: none;
+    margin-bottom: 2rem;
+}
+
+.categoria-link {
+    display: inline-block;
+    padding: 0.5rem 1.2rem;
+    background-color: #e9ecef;
+    color: #495057;
+    text-decoration: none;
+    border-radius: 2rem;
+    font-size: 0.9rem;
+}
+
+.categoria-link:hover {
+    background-color: #dee2e6;
+}
+
+.container-PF {
+    height: 100%;
+    width: 100%;
+    color: #000;
+}
+
+.filtro-preco {
+    margin: 0 auto;
+}
+
+/* Estilos para a seção Mais Vendidos */
+.mais-vendidos {
+    padding: 2rem 0;
+}
+
+.subtitulo {
+    color: #6c757d;
+    font-size: 1rem;
+}
+
+.card {
+    border: none;
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .lista-categorias {
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        padding-bottom: 1rem;
+        -webkit-overflow-scrolling: touch;
+    }
+    
+    .lista-categorias::-webkit-scrollbar {
+        height: 4px;
+    }
+    
+    .lista-categorias::-webkit-scrollbar-thumb {
+        background: #adb5bd;
+        border-radius: 2px;
+    }
+    
+    .categoria-link {
+        white-space: nowrap;
+    }
+    
+    .card-img-top {
+        height: 150px;
+    }
+}
+
+/* Estilos para o footer (mantidos iguais) */
+.footer {
+    background-color: #f8f9fa;
+    padding: 2rem 0;
+}
+
+/* Container principal */
+.pesquisa-filtro-container {
+    background-color: #f8f9fa;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    max-width: 1400px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Grupos de elementos */
+.pesquisa-group,
+.filtro-preco-group {
+    width: 500px;
+}
+
+/* Barra de pesquisa */
+.input-group {
+    height: 100%;
+}
+
+.input-group input {
+    border-right: none;
+    padding: 8px 15px;
+    height: 38px;
+}
+
+.input-group button {
+    border-left: none;
+    background-color: white;
+    padding: 0 15px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Filtro de preço */
+#precoRange {
+    width: 100%;
+    padding: 0 10px;
+}
+
+.filtro-preco-group .btn {
+    padding: 5px 15px;
+}
+
+/* Responsividade */
+@media (max-width: 992px) {
+    .pesquisa-filtro-container {
+        padding: 1rem;
+    }
+    
+    .pesquisa-group,
+    .filtro-preco-group {
+        padding: 8px 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    .pesquisa-filtro-container .row {
+        gap: 1rem;
+    }
+    
+    .input-group input {
+        padding: 8px 12px;
+    }
+}
+
+.pesquisa-group .btn-outline-secondary {
+    border-left: 1px solid #ced4da !important; /* Cor da borda do input */
+    margin-left: -1px; /* Alinhamento perfeito */
+}

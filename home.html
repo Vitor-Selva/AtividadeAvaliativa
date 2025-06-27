@@ -1,166 +1,284 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <!-- Configurações básicas do documento -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clothes & Clothes</title>
-    
-    <!-- Importação de estilos -->  
-    <link rel="icon" type="image/x-icon" href="/img/C&C.png">
-    <link rel="stylesheet" href="css/bootstrap.css"> 
-    <link rel="stylesheet" href="css/home.css">
-</head>
-<body>
-    <!-- Cabeçalho do site -->
-    <header class="header">
-        <!-- Barra de navegação principal -->
-        <nav class="navbar navbar-expand-lg minha-navbar">
-            <div class="container-fluid">
-                <!-- Logo da marca -->
-                <img src="img/Clothes&Clothes.png" alt="Clothes&Clothes" class="ClothesClothes">
-                
-                <!-- Botão do menu mobile (off-canvas) -->
-                <!-- Visível apenas em telas menores que lg (large) -->
-                <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                
-                <!-- Menu para desktop -->
-                <!-- Visível apenas em telas lg (large) e maiores -->
-                <div class="collapse navbar-collapse d-none d-lg-block" id="navbarNavDropdown">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="home.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Detalhes</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Catálogo</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#">Sobre</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Carrinho</a>
-                    </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        
-        <!-- Menu off-canvas para mobile -->
-        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar">
-            <div class="offcanvas-header">
-                <h5 class="offcanvas-title">Menu</h5>
-                <!-- Botão para fechar o off-canvas -->
-                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
-            </div>
-            <div class="offcanvas-body">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Detalhes</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Catálogo</a>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#">Sobre</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Carrinho</a>
-                    </li>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </header>
+   <!DOCTYPE html>
+   <html lang="pt-br">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Clothes & Clothes</title>
+      <link rel="icon" type="image/x-icon" href="/img/C&C.png">
+      <link rel="stylesheet" href="css/bootstrap.css"> 
+      <link rel="stylesheet" href="css/home.css">
+   </head>
+   <body>
 
-    <!-- Conteúdo principal do site -->
-    <main>
-        <!-- Carrossel de imagens -->
-        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-            <!-- Indicadores do carrossel -->
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-            
-            <!-- Itens do carrossel -->
-            <div class="carousel-inner">
-              <!-- Primeiro item -->
-              <div class="carousel-item active">
-                <img src="img/carousel1.jpg" class="d-block w-100" alt="carousel1">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Promoções de Outono</h5>
-                  <p>Preços Imperdíveis Feitos Para Você!</p>
-                </div>
-              </div>
-              
-              <!-- Segundo item -->
-              <div class="carousel-item">
-                <img src="img/carousel2.jpg" class="d-block w-100" alt="carousel2">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Não Fique de Fora Dessa!</h5>
-                  <p>Estilo que veste você. Confira as novidades!</p>
-                </div>
-              </div>
-              
-              <!-- Terceiro item -->
-              <div class="carousel-item">
-                <img src="img/carousel3.jpg" class="d-block w-100" alt="carousel3">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Você só vai encontrar aqui!</h5>
-                  <p>Moda rápida, qualidade que dura. Compre agora!</p>
-                </div>
-              </div>
-            </div>
-            
-            <!-- Controles do carrossel -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
+      <header class="header">
+         <nav class="navbar navbar-expand-lg minha-navbar">
+               <div class="container-fluid">
+                  <img src="img/Clothes&Clothes.png" alt="Clothes&Clothes" class="ClothesClothes">
+                  
+                  <!-- Botão do menu mobile (off-canvas) -->
+                  <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
+                     <span class="navbar-toggler-icon"></span>
+                  </button>
+                  
+            <!-- Menu para desktop -->
+            <div class="collapse navbar-collapse d-none d-lg-flex" id="navbarNavDropdown">
+               <!-- Menu -->
+               <ul class="navbar-nav">
+                  <li class="nav-item">
+                     <a class="nav-link" href="home.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="catalogo.html">Catálogo</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="detalhes.html">Detalhes</a>
+                  </li>
+               </ul>
 
-         <section class="secao-categorias-maisvendidos">
-
-            <!--  Aqui estão as categorias em lista (coloquei links para acessar a Aba Catálogo) -->
-            <div class="categorias">
-               <div class="texto-categorias">
-               <!-- Titulo personalizado para a lista e abaixo a própria lista -->
-                  <h1 class="titulo-categorias">Categorias:</h1>
-                     <ul class="ul-lista-categorias">
-                        <li class="li-cat-link"><a href="#" class="cat-link">Masculino</a></li>
-                        <li class="li-cat-link"><a href="#" class="cat-link">Feminino</a></li>
-                        <li class="li-cat-link"><a href="#" class="cat-link">Camisas</a></li>
-                        <li class="li-cat-link"><a href="#" class="cat-link">Shorts</a></li>
-                        <li class="li-cat-link"><a href="#" class="cat-link">Acessórios</a></li>
-                     </ul>
+               <!-- Carrinho -->
+               <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                     <a href="carrinho.html" class="nav-link" title="Carrinho">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                     </svg>
+                     </a>
+                  </li>
+               </ul>
+            </div>
+         </nav>
+         
+         <!-- Menu off-canvas para mobile -->
+         <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar">
+               <div class="offcanvas-header">
+                  <h5 class="offcanvas-title">Menu</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
                </div>
+               <div class="offcanvas-body">
+                  <ul class="navbar-nav">
+                     <li class="nav-item">
+                           <a class="nav-link" href="home.html">Home</a>
+                     </li>
+                     <li class="nav-item">
+                           <a class="nav-link" href="catalogo.html">Catálogo</a>
+                     </li>
+                     <li class="nav-item">
+                           <a class="nav-link" href="detalhes.html">Detalhes</a>
+                        <li class="nav-item">
+                           <a class="nav-link" href="carrinho.html">Carrinho</a>
+                     </li>
+                     </li>
+                  </ul>
+               </div>
+         </div>
+      </header>
+
+      <!-- Conteúdo principal do site -->
+      <main>
+         <!-- Carrossel de imagens -->
+         <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+               <div class="carousel-indicators">
+               <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+               <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+               <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+               </div>
+               
+               <!-- Itens do carrossel -->
+               <div class="carousel-inner">
+               <!-- Primeiro item -->
+               <div class="carousel-item active">
+                  <img src="img/carousel1.png" class="d-block w-100" alt="carousel1">
+                  <div class="carousel-caption d-none d-md-block">
+                     <h5>Promoções de Outono</h5>
+                     <p>Preços Imperdíveis Feitos Para Você!</p>
+                  </div>
+               </div>
+               
+               <!-- Segundo item -->
+               <div class="carousel-item">
+                  <img src="img/carousel2.png" class="d-block w-100" alt="carousel2">
+                  <div class="carousel-caption d-none d-md-block">
+                     <h5>Não Fique de Fora Dessa!</h5>
+                     <p>Estilo que veste você. Confira as novidades!</p>
+                  </div>
+               </div>
+               
+               <!-- Terceiro item -->
+               <div class="carousel-item">
+                  <img src="img/carousel3.png" class="d-block w-100" alt="carousel3">
+                  <div class="carousel-caption d-none d-md-block">
+                     <h5>Você só vai encontrar aqui!</h5>
+                     <p>Moda rápida, qualidade que dura. Compre agora!</p>
+                  </div>
+               </div>
+               </div>
+               
+               <!-- Controles do carrossel -->
+               <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+               <span class="visually-hidden">Previous</span>
+               </button>
+               <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+               <span class="carousel-control-next-icon" aria-hidden="true"></span>
+               <span class="visually-hidden">Next</span>
+               </button>
             </div>
 
-            <div class="mais-vendidos">
-                  <!-- Album dos mais vendidos -->
-                  <div class="album py-5 bg-body-tertiary">
+            <section class="secao-categorias-maisvendidos">
+
+               <!--  Aqui estão as categorias em lista (coloquei links para acessar a Aba Catálogo) -->
+               <div class="categorias">
+                  <div class="texto-categorias">
+                     <h1>Categorias:</h1>
+                        <ul class="ul-lista-categorias">
+                           <li class="li-cat-link"><a href="#" class="cat-link">Masculino</a></li>
+                           <li class="li-cat-link"><a href="#" class="cat-link">Feminino</a></li>
+                           <li class="li-cat-link"><a href="#" class="cat-link">Camisas</a></li>
+                           <li class="li-cat-link"><a href="#" class="cat-link">Crianças</a></li>
+                           <li class="li-cat-link"><a href="#" class="cat-link">Shorts</a></li>
+                           <li class="li-cat-link"><a href="#" class="cat-link">Calçados</a></li>
+                           <li class="li-cat-link"><a href="#" class="cat-link">Academia</a></li>
+                        </ul>
+                        <!-- Filtro por faixa de preço -->
+                        <div class="filtro">
+                              <h4>Filtrar por preço</h4>
+                              <input type="range" class="form-range" min="0" max="5" step="0.5" id="customRange3">
+                              <br>
+                              <div class="filtro-input">
+                                 <input class="form-control" type="text" placeholder="Mínimo" aria-label="valor mínimo">
+                                 <input class="form-control" type="text" placeholder="Máximo" aria-label="valor máximo">
+                              </div>
+                           </div>
+                     </div>
+                     <div class="botao">
+                           <button type="button" class="btn btn-secondary">Filtrar</button>
+                     </div>
+                  </div>               
+
+               <!-- categoria mais vendidos -->
+               <div class="mais-vendidos">
+                     <div class="album py-5 bg-body-tertiary">
+                        <div class="container">
+                           <div class="row g-3">
+                              <div class="cont-titulo-mais">
+                                 <h1>Mais Vendidos</h1>
+                                 <h2 class="subtitulo-mais">Produtos em destaque este mês, você também pode gostar!</h2>
+                              </div>
+                           <!-- Aqui começa cada um dos oito cards, divididos por uma linha saltada -->
+                           <!-- Card 1 -->
+                              <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                                 <div class="card shadow-sm">
+                                 <!-- Imagem album -->
+                                    <img src="img/ECardFav1.1.png" alt="Card1.1">
+                                    <!-- Card do album -->
+                                    <div class="card-body">
+                                       <p class="card-text">Blusa de frio Bege</p>
+                                       <p>R$ 100,00</p>
+                                    </div>
+                                 </div>
+                              </div>
+                              <!-- Card 2 -->
+                              <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                              <div class="card shadow-sm">
+                                 <!-- Imagem album -->
+                                 <img src="img/ECardFav2.png" alt="Card2">
+                                 <!-- Card do album -->
+                                 <div class="card-body">
+                                       <p class="card-text">Calça Bege</p>
+                                       <p>R$ 100,00</p>
+                                    </div>
+                                 </div>
+                              </div>
+                           <!-- Card 3 -->
+                              <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                                 <div class="card shadow-sm">
+                                 <!-- Imagem album -->
+                                    <img src="img/ECardFav3.png" alt="Card3">
+                                    <!-- Card do album -->
+                                    <div class="card-body">
+                                          <p class="card-text">Camisa branca</p>
+                                          <p>R$ 100,00</p>
+                                       </div>
+                                    </div>
+                                 </div>
+                              <!-- Card 4 -->
+                              <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                                 <div class="card shadow-sm">
+                                 <!-- Imagem album -->
+                                    <img src="img/ECardFav4.png" alt="Card4">
+                                    <!-- Card do album -->
+                                    <div class="card-body">
+                                       <p class="card-text">Tênis Branco</p>
+                                       <p>R$ 100,00</p>
+                                    </div>
+                                 </div>
+                              </div>
+                              <!-- Card 5 -->
+                              <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                                 <div class="card shadow-sm">
+                                 <!-- Imagem album -->
+                                    <img src="img/ECardFav5.png" alt="Card5">
+                                    <!-- Card do album -->
+                                    <div class="card-body">
+                                       <p class="card-text">Bermuda Preta</p>
+                                       <p>R$ 100,00</p>
+                                    </div>
+                                 </div>
+                              </div>
+                              <!-- Card 6 -->
+                              <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                                 <div class="card shadow-sm">
+                                 <!-- Imagem album -->
+                                    <img src="img/ECardFav6.png" alt="Card6">
+                                    <!-- Card do album -->
+                                    <div class="card-body">
+                                       <p class="card-text">Bermuda Branca</p>
+                                       <p>R$ 100,00</p>
+                                    </div>
+                                 </div>
+                              </div>
+                              <!-- Card 7 -->
+                              <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                                 <div class="card shadow-sm">
+                                 <!-- Imagem album -->
+                                    <img src="img/ECardFav7.png" alt="Card7">
+                                    <!-- Card do album -->
+                                    <div class="card-body">
+                                       <p class="card-text">Camisa Preta</p>
+                                       <p>R$ 100,00</p>
+                                    </div>
+                                 </div>
+                              </div>
+                              <!-- Card 8 -->
+                              <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                              <!-- Imagem album -->
+                                 <div class="card shadow-sm">
+                                    <img src="img/ECardFav8.png" alt="Card8">
+                                    <!-- Card do album -->
+                                    <div class="card-body">
+                                       <p class="card-text">Camisa Bege</p>
+                                       <p>R$ 100,00</p>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+
+            <!-- Reaproveitamento da parte dos mais vendidos para fazer outra seção do site -->
+               <div class="novidades">
+                  <div class="album py-5 bg-body-tertiary novidades-album">
                      <div class="container">
                         <div class="row g-3">
-                           <!-- Título da Categoria Mais vendidos -->
                            <div class="cont-titulo-mais">
-                              <h1>Mais Vendidos</h1>
-                              <h2 class="subtitulo-mais">Produtos em destaque este mês, você também pode gostar!</h2>
+                              <h1>Novidades</h1>
+                              <h2 class="subtitulo-mais">Produtos de ultima linha diretamente para você!</h2>
                            </div>
                         <!-- Aqui começa cada um dos oito cards, divididos por uma linha saltada -->
                         <!-- Card 1 -->
-                           <div class="col-12 col-sm-6 col-md-4 col-lg- ">
+                           <div class="col-6 col-sm-6 col-md-4 col-lg-3">
                               <div class="card shadow-sm">
                               <!-- Imagem album -->
                                  <img src="img/ECardFav1.1.png" alt="Card1.1">
@@ -172,7 +290,7 @@
                               </div>
                            </div>
                            <!-- Card 2 -->
-                           <div class="col-12 col-sm-6 col-md-4 col-lg-">
+                           <div class="col-6 col-sm-6 col-md-4 col-lg-3">
                            <div class="card shadow-sm">
                               <!-- Imagem album -->
                               <img src="img/ECardFav2.png" alt="Card2">
@@ -184,7 +302,7 @@
                               </div>
                            </div>
                         <!-- Card 3 -->
-                           <div class="col-12 col-sm-6 col-md-4 col-lg-">
+                           <div class="col-6 col-sm-6 col-md-4 col-lg-3">
                               <div class="card shadow-sm">
                               <!-- Imagem album -->
                                  <img src="img/ECardFav3.png" alt="Card3">
@@ -196,7 +314,7 @@
                                  </div>
                               </div>
                            <!-- Card 4 -->
-                           <div class="col-12 col-sm-6 col-md-4 col-lg-">
+                           <div class="col-6 col-sm-6 col-md-4 col-lg-3">
                               <div class="card shadow-sm">
                               <!-- Imagem album -->
                                  <img src="img/ECardFav4.png" alt="Card4">
@@ -208,7 +326,7 @@
                               </div>
                            </div>
                            <!-- Card 5 -->
-                           <div class="col-12 col-sm-6 col-md-4 col-lg-">
+                           <div class="col-6 col-sm-6 col-md-4 col-lg-3">
                               <div class="card shadow-sm">
                               <!-- Imagem album -->
                                  <img src="img/ECardFav5.png" alt="Card5">
@@ -220,7 +338,7 @@
                               </div>
                            </div>
                            <!-- Card 6 -->
-                           <div class="col-12 col-sm-6 col-md-4 col-lg-">
+                           <div class="col-6 col-sm-6 col-md-4 col-lg-3">
                               <div class="card shadow-sm">
                               <!-- Imagem album -->
                                  <img src="img/ECardFav6.png" alt="Card6">
@@ -232,7 +350,7 @@
                               </div>
                            </div>
                            <!-- Card 7 -->
-                           <div class="col-12 col-sm-6 col-md-4 col-lg-">
+                           <div class="col-6 col-sm-6 col-md-4 col-lg-3">
                               <div class="card shadow-sm">
                               <!-- Imagem album -->
                                  <img src="img/ECardFav7.png" alt="Card7">
@@ -244,7 +362,7 @@
                               </div>
                            </div>
                            <!-- Card 8 -->
-                           <div class="col-12 col-sm-6 col-md-4 col-lg-">
+                           <div class="col-6 col-sm-6 col-md-4 col-lg-3">
                            <!-- Imagem album -->
                               <div class="card shadow-sm">
                                  <img src="img/ECardFav8.png" alt="Card8">
@@ -256,124 +374,150 @@
                               </div>
                            </div>
                         </div>
-                  </div>
-               </div>
-            </div>
-         </section>
-
-         <!-- Reaproveitamento da parte dos mais vendidos para fazer a segunda seção do site -->
-            <div class="novidades">
-               <!-- Album dos mais vendidos -->
-               <div class="album py-5 bg-body-tertiary">
-                  <div class="container">
-                     <div class="row g-3">
-                        <!-- Título da Categoria Mais vendidos -->
-                        <div class="cont-titulo-mais">
-                           <h1>Novidades</h1>
-                           <h2 class="subtitulo-mais">Produtos de ultima linha diretamente para você!</h2>
-                        </div>
-                     <!-- Aqui começa cada um dos oito cards, divididos por uma linha saltada -->
-                     <!-- Card 1 -->
-                        <div class="col-12 col-sm-6 col-md-4 col-lg- ">
-                           <div class="card shadow-sm">
-                           <!-- Imagem album -->
-                              <img src="img/ECardFav1.1.png" alt="Card1.1">
-                              <!-- Card do album -->
-                              <div class="card-body">
-                                 <p class="card-text">Blusa de frio Bege</p>
-                                 <p>R$ 100,00</p>
-                              </div>
-                           </div>
-                        </div>
-                        <!-- Card 2 -->
-                        <div class="col-12 col-sm-6 col-md-4 col-lg-">
-                        <div class="card shadow-sm">
-                           <!-- Imagem album -->
-                           <img src="img/ECardFav2.png" alt="Card2">
-                           <!-- Card do album -->
-                           <div class="card-body">
-                                 <p class="card-text">Calça Bege</p>
-                                 <p>R$ 100,00</p>
-                              </div>
-                           </div>
-                        </div>
-                     <!-- Card 3 -->
-                        <div class="col-12 col-sm-6 col-md-4 col-lg-">
-                           <div class="card shadow-sm">
-                           <!-- Imagem album -->
-                              <img src="img/ECardFav3.png" alt="Card3">
-                              <!-- Card do album -->
-                              <div class="card-body">
-                                    <p class="card-text">Camisa branca</p>
-                                    <p>R$ 100,00</p>
-                                 </div>
-                              </div>
-                           </div>
-                        <!-- Card 4 -->
-                        <div class="col-12 col-sm-6 col-md-4 col-lg-">
-                           <div class="card shadow-sm">
-                           <!-- Imagem album -->
-                              <img src="img/ECardFav4.png" alt="Card4">
-                              <!-- Card do album -->
-                              <div class="card-body">
-                                 <p class="card-text">Tênis Branco</p>
-                                 <p>R$ 100,00</p>
-                              </div>
-                           </div>
-                        </div>
-                        <!-- Card 5 -->
-                        <div class="col-12 col-sm-6 col-md-4 col-lg-">
-                           <div class="card shadow-sm">
-                           <!-- Imagem album -->
-                              <img src="img/ECardFav5.png" alt="Card5">
-                              <!-- Card do album -->
-                              <div class="card-body">
-                                 <p class="card-text">Bermuda Preta</p>
-                                 <p>R$ 100,00</p>
-                              </div>
-                           </div>
-                        </div>
-                        <!-- Card 6 -->
-                        <div class="col-12 col-sm-6 col-md-4 col-lg-">
-                           <div class="card shadow-sm">
-                           <!-- Imagem album -->
-                              <img src="img/ECardFav6.png" alt="Card6">
-                              <!-- Card do album -->
-                              <div class="card-body">
-                                 <p class="card-text">Bermuda Branca</p>
-                                 <p>R$ 100,00</p>
-                              </div>
-                           </div>
-                        </div>
-                        <!-- Card 7 -->
-                        <div class="col-12 col-sm-6 col-md-4 col-lg-">
-                           <div class="card shadow-sm">
-                           <!-- Imagem album -->
-                              <img src="img/ECardFav7.png" alt="Card7">
-                              <!-- Card do album -->
-                              <div class="card-body">
-                                 <p class="card-text">Camisa Preto</p>
-                                 <p>R$ 100,00</p>
-                              </div>
-                           </div>
-                        </div>
-                        <!-- Card 8 -->
-                        <div class="col-12 col-sm-6 col-md-4 col-lg-">
-                        <!-- Imagem album -->
-                           <div class="card shadow-sm">
-                              <img src="img/ECardFav8.png" alt="Card8">
-                              <!-- Card do album -->
-                              <div class="card-body">
-                                 <p class="card-text">Camisa Bege</p>
-                                 <p>R$ 100,00</p>
-                              </div>
-                           </div>
-                        </div>
                      </div>
                   </div>
                </div>
-            </div>
+            </main>
 
-    <script src="js/bootstrap.bundle.js"></script>
-</body>
-</html>
+         <!-- Aqui começa o footer -->
+      <footer class="footer">
+         <div class="b-example-divider">
+         </div>
+         <div class="container">
+         <footer class="py-5">
+               <div class="row">
+               <div class="col-6 col-md-2 mb-3">
+                     <h5>
+                     Políticas de Privacidade
+                     </h5>
+                     <ul class="nav flex-column">
+                     <li class="nav-item mb-2">
+                        <a href="#" class="nav-link p-0 text-body-secondary">
+                        Política de cookies
+                        </a>
+                     </li>
+                     <li class="nav-item mb-2">
+                        <a href="#" class="nav-link p-0 text-body-secondary">
+                        Política de privacidade
+                        </a>
+                     </li>
+                     <li class="nav-item mb-2">
+                        <a href="#" class="nav-link p-0 text-body-secondary">
+                        Política de troca e arrependimento
+                        </a>
+                     </li>
+                     <li class="nav-item mb-2">
+                        <a href="#" class="nav-link p-0 text-body-secondary">
+                        Regulamentos
+                        </a>
+                     </li>
+                     <li class="nav-item mb-2">
+                        <a href="#" class="nav-link p-0 text-body-secondary">
+                        Sobre
+                        </a>
+                     </li>
+                     </ul>
+               </div>
+               <div class="col-6 col-md-2 mb-3">
+                     <h5>
+                     Institucional
+                     </h5>
+                     <ul class="nav flex-column">
+                     <li class="nav-item mb-2">
+                        <a href="#" class="nav-link p-0 text-body-secondary">
+                        Assessoria de imprensa
+                        </a>
+                     </li>
+                     <li class="nav-item mb-2">
+                        <a href="#" class="nav-link p-0 text-body-secondary">
+                        Relação com investidores
+                        </a>
+                     </li>
+                     <li class="nav-item mb-2">
+                        <a href="#" class="nav-link p-0 text-body-secondary">
+                        Sustentabilidade
+                        </a>
+                     </li>
+                     <li class="nav-item mb-2">
+                        <a href="#" class="nav-link p-0 text-body-secondary">
+                        Trabalhe conosco
+                        </a>
+                     </li>
+                     </ul>
+               </div>
+               <div class="col-6 col-md-2 mb-3">
+                     <h5>
+                     Ajuda e atendimento
+                     </h5>
+                     <ul class="nav flex-column">
+                     <li class="nav-item mb-2">
+                        <a href="#" class="nav-link p-0 text-body-secondary">
+                        Acompanhe o seu pedido
+                        </a>
+                     </li>
+                     <li class="nav-item mb-2">
+                        <a href="#" class="nav-link p-0 text-body-secondary">
+                        Dúvidas frequentes
+                        </a>
+                     </li>
+                     <li class="nav-item mb-2">
+                        <a href="#" class="nav-link p-0 text-body-secondary">
+                        Fale com a gente
+                        </a>
+                     </li>
+                     <li class="nav-item mb-2">
+                        <a href="#" class="nav-link p-0 text-body-secondary">
+                        Troca e arrependimento
+                        </a>
+                     </li>
+                     </ul>
+               </div>
+               <div class="col-md-5 offset-md-1 mb-3">
+                     <form>
+                     <h5>
+                        Receba ofertas e descontos exclusivos
+                     </h5>
+                     <p>
+                        Cadastre-se na nossa newsletter!
+                     </p>
+                     <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                        <label for="newsletter1" class="visually-hidden">
+                        Email address   
+                        </label>
+                        <input id="newsletter1" type="email" class="form-control" placeholder="Email address">
+                        <button class="btn btn-primary" type="button">
+                        Enviar
+                        </button>
+                     </div>
+                     </form>
+               </div>
+               </div>
+                     <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+                     <p>
+                        &copy; 2025 C&C, Trabalho Acadêmico: Desenvolvendo um Template de um E-Commerce.
+                        <br>
+                        <a target="_blank" href="https://icons8.com/icon/uLWV5A9vXIPu/facebook">Facebook Novo</a> ícone por <a target="_blank" href="https://icons8.com">Icons8</a>
+                     <br>
+                     <a target="_blank" href="https://icons8.com/icon/32323/instagram">Instagram</a> ícone por <a target="_blank" href="https://icons8.com">Icons8</a>
+                     </p>
+                     
+                     <ul class="list-unstyled d-flex">
+                        <li class="ms-3">
+                        <a class="link-body-emphasis" href="https://www.instagram.com/" aria-label="Instagram">
+                           <img src="img/instagram.png" alt="instagram" class="instagram">
+                        </a>
+                        </li>
+                        <li class="ms-3">
+                        <a class="link-body-emphasis" href="https://www.facebook.com/?locale=pt_BR" aria-label="Facebook">
+                           <img src="img/facebook.png" alt="facebook" class="facebook" >
+                        </a>
+                        </li>
+                     </ul>
+                     </div>
+         </footer>
+         </div>
+      </footer>
+
+      <script src="js/bootstrap.bundle.js"></script>
+   </body>
+   </html>
