@@ -169,3 +169,20 @@
     border-left: 1px solid #ced4da !important; /* Cor da borda do input */
     margin-left: -1px; /* Alinhamento perfeito */
 }
+
+.mais-vendidos {
+    display: flex;
+    flex-direction: row;
+    max-width: 1400px;
+}
+
+.filtro-cat {
+    width: 400px;
+    height: 400px;
+    justify-content: center;
+    text-align: center;
+}
+
+.cards-cat {
+
+}

@@ -90,37 +90,55 @@
                         <li><a href="#" class="categoria-link">Academia</a></li>
                     </ul>
                 </div>
+            </div>
 
         <!-- Container da barra de busca -->
         <div class="container-fluid py-3">
-        <div class="row justify-content-center">
-            <div class="col-12 col-sm-10 col-md-8 col-lg-6">
-            <div class="input-group w-100">
-                <input type="text" class="form-control" placeholder="Pesquisar produtos..." aria-label="Pesquisar">
-                <button class="btn btn-secondary" type="button">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                    class="bi bi-search" viewBox="0 0 16 16">
-                    <path
-                    d="M11.742 10.344a6.5 6.5 0 1 0-1.398 1.398h-.001c.03.04.063.078.098.115l3.85 3.85a1
-                        1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.114-.1zM12
-                        6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-                </svg>
-                </button>
-            </div>
+            <div class="row justify-content-center">
+                <div class="col-12 col-sm-10 col-md-8 col-lg-6">
+                <div class="input-group w-100">
+                    <input type="text" class="form-control" placeholder="Pesquisar produtos..." aria-label="Pesquisar">
+                    <button class="btn btn-secondary" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-search" viewBox="0 0 16 16">
+                        <path
+                        d="M11.742 10.344a6.5 6.5 0 1 0-1.398 1.398h-.001c.03.04.063.078.098.115l3.85 3.85a1
+                            1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.114-.1zM12
+                            6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                    </svg>
+                    </button>
+                </div>
+                </div>
             </div>
         </div>
-        </div>
+        </section>
+
 
         <!-- Seção Mais Vendidos -->
         <section class="mais-vendidos py-0 bg-light">
 
-            <div class="container">
+            <!-- Filtro por faixa de preço -->
+            <div class="filtro-cat">
+                    <h4>Filtrar por preço</h4>
+                    <input type="range" class="form-range" min="0" max="5" step="0.5" id="customRange3">
+                    <br>
+                    <div class="filtro-input">
+                        <input class="form-control" type="text" placeholder="Mínimo" aria-label="valor mínimo">
+                        <input class="form-control" type="text" placeholder="Máximo" aria-label="valor máximo">
+                    </div>
+                <div class="botao">
+                    <button type="button" class="btn btn-secondary">Filtrar</button>
+                </div>
+            </div>
+
+            <div class="container cards-cat">
                 <div id="Masculino">
                     <h1 class="text-center mb-3">Masculino</h1>
                 </div>
                 <p class="text-center mb-4 subtitulo">Produtos em destaque este mês, você também pode gostar!</p>
                 
                 <div class="row g-4">
+
                     <!-- Card 1 -->
                     <div class="col-6 col-md-4 col-lg-3">
                         <div class="card h-100 shadow-sm">
