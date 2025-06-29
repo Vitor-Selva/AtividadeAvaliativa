@@ -2,7 +2,7 @@ Tecnologias, frameworks e ferramentas usadas:
 Este template foi desenvolvido no editor de código Virtual Studio Code, utilizando as seguintes tecnologias: HTML, CSS, o Framework Bootstrap 5 e o Git/GitHub.
 
 Instruções de instalação, build e execução local:
-O arquivo .zip pode ser descompactado e usado ou pode utilizar o repositório o github:
+O arquivo .zip pode ser descompactado e usado.
 
 Descrição das decisões de design e estrutura de pastas:
 - Design responsivo com Bootstrap: uso de container, row, e col para adaptar o layout a diferentes dispositivos.
