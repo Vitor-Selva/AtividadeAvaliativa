@@ -1,0 +1,54 @@
+.img-ajustada {
+    object-fit: cover;
+    height: 100%;
+    border-radius: 8px;
+    object-position: center;  
+  }
+  
+  .carousel-detalhes {
+    width: 100%;
+    max-width: 500px;
+    height: 100%;
+    margin: auto;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+  }
+
+  .botao-Compra-Carrinho {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 1em;
+  }
+
+  @media (min-width: 768px) {
+    .carousel-detalhes {
+
+    }
+    .container-md {
+      display: flex ;
+      flex-direction: row;
+    }
+    
+    .botao-Compra-Carrinho {
+      display: flex;
+      align-items: self-end;
+      justify-content: flex-end;
+    }
+  }
+
+  .card-detalhes {
+    width: 100%;
+    max-width: 600px;
+  }
+
+  .cart-body {
+    display: flex;
+    flex-direction: row;
+}
+
+.carousel-inner {
+  height: 100%;
+}
+
+

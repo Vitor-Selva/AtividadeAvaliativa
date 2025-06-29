@@ -1,7 +1,8 @@
-/* Estilos para a seção de categorias */
 .secao-categorias {
     background-color: #f8f9fa;
-    padding: 2rem 0em;
+    padding: 2rem 0em 0em;
+    height: 280px;
+
 }
 
 .secao-categorias .container {
@@ -21,15 +22,15 @@
 .categoria-link {
     display: inline-block;
     padding: 0.5rem 1.2rem;
-    background-color: #e9ecef;
+    background-color: #dbdbdb;
     color: #495057;
     text-decoration: none;
-    border-radius: 2rem;
+    border-radius: 15px;
     font-size: 0.9rem;
 }
 
 .categoria-link:hover {
-    background-color: #dee2e6;
+    background-color: rgb(176, 180, 184);
 }
 
 .container-PF {
@@ -43,7 +44,7 @@
 }
 
 /* Estilos para a seção Mais Vendidos */
-.mais-vendidos {
+.Masculino {
     padding: 2rem 0;
 }
 
@@ -91,7 +92,6 @@
 
 /* Estilos para o footer (mantidos iguais) */
 .footer {
-    background-color: #f8f9fa;
     padding: 2rem 0;
 }
 
@@ -170,19 +170,93 @@
     margin-left: -1px; /* Alinhamento perfeito */
 }
 
-.mais-vendidos {
+.layout-vitrine {
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
     max-width: 1400px;
-}
+    margin: 0 auto;
+    padding: 1rem;
+  }
+  
+  
+  /* Cards principais */
+  .cards-cat {
+    flex: 3 1 600px;
+  }
+  
+  /* Responsividade: empilha em telas menores */
+  @media (max-width: 768px) {
+    .layout-vitrine {
+      flex-direction: column;
+    }
+  
+    .filtro-cat,
+    .cards-cat {
+      max-width: 100%;
+    }
+  }
 
-.filtro-cat {
-    width: 400px;
-    height: 400px;
+  .filtro-cat {
+    background-color:  #dbdbdb;
+    padding: 1rem;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 7em;
+    gap: 1rem;
+    max-width: 300px;
+    height: 340px;
+  }
+  
+  .filtro-input {
+    width: 100%;
+    display: flex;
+    gap: 0.5rem;
     justify-content: center;
-    text-align: center;
-}
+  }
+  
+  .filtro-input input {
+    min-width: 100px;
+  }
+  
+  .botao {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .botao button {
+    width: 100%;
+    max-width: 90px;
+  }
 
-.cards-cat {
+  .form-range {
+    width: 15em;
+  }
 
-}
+/* Quando a tela for menor que 945px */
+@media (max-width: 945px) {
+    .filtro-cat {
+      margin: 0 auto 3em;         /* centraliza o filtro horizontalmente */
+    }
+  }
+
+  .Feminino {
+    background-color: #dbdbdb;
+  }
+
+  .cat-titulo {
+    padding: 0.5em;
+    background-color: #dbdbdb;
+    border-radius: 15px;
+    max-width: 260px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .page-link {
+    color: #495057;
+  }

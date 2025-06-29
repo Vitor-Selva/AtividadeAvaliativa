@@ -1,30 +1,13 @@
-
-
-
-
-
-/* 
- * ESTILOS DO MENU OFF-CANVAS (PARA MOBILE)
- * Define a aparência do menu lateral que aparece em telas pequenas
- */
- .offcanvas {
+.offcanvas {
     background-color: blanchedalmond !important;
     width: 75% !important; 
 }
 
-/* 
- * BOTÃO DO MENU HAMBURGUER (botão que abre o offcanvas)
- * Estilização do botão que abre o menu em mobile
- */
 .navbar-toggler.d-lg-none { 
     position: absolute;
     right: 1rem;
 }
 
-/* 
- * BARRA DE NAVEGAÇÃO PRINCIPAL
- * Estilos para a navbar em todas as telas
- */
 .minha-navbar {
     background-color: blanchedalmond;
     padding: 1rem 2rem;
@@ -34,10 +17,6 @@
     height: 9em; 
 }
 
-/* 
- * LOGO DA MARCA
- * Estilização da imagem do logo
- */
 .ClothesClothes{
     width: 11em;   
     margin-right: 4em;
@@ -58,74 +37,63 @@
 }
 
 .carousel-item {
-    height: 55vh; /* Altura relativa à viewport */
+    height: 55vh;
 }
 
-/* Imagens do carrossel */
 .carousel-item img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Garante que a imagem cubra todo o espaço */
+    object-fit: cover;
     
 }
 
-/* Alinha o título dos mais vendidos */
 .cont-titulo-mais {
     text-align: center;
 }
-/* Tamanho dos tetos do subtítulo dos mais vendidos */
+
 .subtitulo-mais {
     font-size: 1.2em;
 }
 
-/* Garante que todos os cards tenham a mesma altura */
 .card {
     height: 100%;
 }
 
-/* Garante que todas as imagens dentro dos cards tenham o mesmo tamanho */
 .card img {
     width: 100%;
     height: 250px;
-    object-fit: cover; /* Corta a imagem para preencher sem distorcer */
+    object-fit: cover;
     border-radius: 0.5rem;
   }
 
-/* Faz com que as categorias e os cards fiquem lado a lado */
 .secao-categorias-maisvendidos {
     display: flex;
 }
 
-/* faz com que em telas mobile fique centralizado */
 .mais-vendidos {
     width: 100%;        
 }
 
-/* Seta um tamanho para o container das categorias */
 .categorias{
     width: 600px;
 }
 
-/* Usa o media query para setar um valor máximo de pixels que as categorias podem ficar visíveis, ou seja, retira elas do modo mobile */
 @media (max-width: 880px) {
     .categorias {
       display: none;
     }
   }
 
-/* Usado para estilizar a posição de todo o texto de categorias */
 .texto-categorias {
     text-align: center;
     margin-top: 5em;
 }
 
-/* Usado para estilizar os links de categorias */
 .cat-link {
     text-decoration: none;
     color: black;
 }
 
-/* tira os estilos que vem por padrão nas listas da tag ul*/
 .ul-lista-categorias {
     list-style: none;
     padding: 0;
@@ -138,12 +106,11 @@
     font-size: 1.2em;
 }
 
-  /* Garante que o corpo ocupe o espaço restante, mantendo tamanho uniforme */
   .card-body {
-    flex-grow: 1; /* Faz com que esse bloco cresça para preencher o card */
+    flex-grow: 1;
     flex-direction: column;
-    justify-content: space-between; /* Espaça o conteúdo de forma uniforme */
-    padding: 0.75rem; /* Reduz o padding interno */
+    justify-content: space-between;
+    padding: 0.75rem;
     
   }
 
@@ -154,16 +121,14 @@
     .card {
         margin-bottom: 15px;
     }
-    /* Ajuste no container para evitar espaçamento estranho */
     .row.g-3 {
-        --bs-gutter-x: 0.5rem; /* Reduz o espaçamento horizontal */
-
+        --bs-gutter-x: 0.5rem;
     }
 }
 .card-text, .card-body p {
-    white-space: nowrap; /* Evita quebra de linha */
+    white-space: nowrap;
     overflow: hidden;
-    text-overflow: ellipsis; /* Adiciona "..." se o texto for muito longo */
+    text-overflow: ellipsis;
 }
 
 .novidades-album {
@@ -174,7 +139,6 @@
     border: 4px solid rgb(231, 231, 231);
 }
 
-/* css para o filtro de preço montado com elementos html */
 .filtro {
     margin-top: 6em;
 }
@@ -200,4 +164,24 @@
     text-align: center;
     margin-left: 127px;
     margin-top: 1em;
+}
+
+.link-carrinho {
+    color: black;
+}
+
+.card-text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bi.bi-instagram {
+    width: 35px;
+    height: 35px;
+}
+
+.bi.bi-facebook {
+    width: 35px;
+    height: 35px;
 }
