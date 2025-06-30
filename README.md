@@ -3,10 +3,12 @@ Este template foi desenvolvido no editor de código Virtual Studio Code, utiliza
 
 Instruções de instalação, build e execução local:
 O arquivo .zip pode ser descompactado e usado.
+Link do repositório do GitHub: https://github.com/Vitor-Selva/AtividadeAvaliativa.git
 
 Descrição das decisões de design e estrutura de pastas:
 - Design responsivo com Bootstrap: uso de container, row, e col para adaptar o layout a diferentes dispositivos.
 - Cards e outro componentes reutilizáveis para reduzir retrabalho.
 - Estrutura de pastas simples e de fácil compreenção, arquivos style.css na pasta css, arquivos javaScript na pasta js, imagens na pasta img e arquivos .HTML por fora.
 - Por conta de ser um e-commerce de roupas, foram escolhidas cores mais claras e suaves para que houvesse um contraste com as cores das roupas.
+- (No modo Escuro) Cores escuras elegantes e neutras que reduzem a fadiga visual sem perder contraste.
 - O layout foi inspirado em lojas como a Cantauro, Renner, Riachuelo e C&A Brasil.

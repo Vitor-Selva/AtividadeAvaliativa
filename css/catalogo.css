@@ -43,7 +43,6 @@
     margin: 0 auto;
 }
 
-/* Estilos para a seção Mais Vendidos */
 .Masculino {
     padding: 2rem 0;
 }
@@ -62,7 +61,6 @@
     object-fit: cover;
 }
 
-/* Responsividade */
 @media (max-width: 768px) {
     .lista-categorias {
         overflow-x: auto;
@@ -90,12 +88,10 @@
     }
 }
 
-/* Estilos para o footer (mantidos iguais) */
 .footer {
     padding: 2rem 0;
 }
 
-/* Container principal */
 .pesquisa-filtro-container {
     background-color: #f8f9fa;
     width: 100%;
@@ -106,13 +102,11 @@
     justify-content: center;
 }
 
-/* Grupos de elementos */
 .pesquisa-group,
 .filtro-preco-group {
     width: 500px;
 }
 
-/* Barra de pesquisa */
 .input-group {
     height: 100%;
 }
@@ -133,7 +127,6 @@
     justify-content: center;
 }
 
-/* Filtro de preço */
 #precoRange {
     width: 100%;
     padding: 0 10px;
@@ -143,7 +136,6 @@
     padding: 5px 15px;
 }
 
-/* Responsividade */
 @media (max-width: 992px) {
     .pesquisa-filtro-container {
         padding: 1rem;
@@ -166,8 +158,8 @@
 }
 
 .pesquisa-group .btn-outline-secondary {
-    border-left: 1px solid #ced4da !important; /* Cor da borda do input */
-    margin-left: -1px; /* Alinhamento perfeito */
+    border-left: 1px solid #ced4da !important;
+    margin-left: -1px;
 }
 
 .layout-vitrine {
@@ -179,13 +171,10 @@
     padding: 1rem;
   }
   
-  
-  /* Cards principais */
   .cards-cat {
     flex: 3 1 600px;
   }
   
-  /* Responsividade: empilha em telas menores */
   @media (max-width: 768px) {
     .layout-vitrine {
       flex-direction: column;
@@ -236,10 +225,9 @@
     width: 15em;
   }
 
-/* Quando a tela for menor que 945px */
 @media (max-width: 945px) {
     .filtro-cat {
-      margin: 0 auto 3em;         /* centraliza o filtro horizontalmente */
+      margin: 0 auto 3em;
     }
   }
 
@@ -260,3 +248,169 @@
   .page-link {
     color: #495057;
   }
+
+.dark-mode .secao-categorias {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+}
+
+.dark-mode .cat-titulo {
+    color: #e0e0e0 !important;
+}
+
+.dark-mode .categoria-link {
+    color: #e0e0e0 !important;
+}
+
+.dark-mode .categoria-link:hover {
+    color: #a3a2a2 !important;
+}
+
+.dark-mode .lista-categorias {
+    color: #e0e0e0;
+}
+
+.dark-mode .Masculino,
+.dark-mode .Feminino,
+.dark-mode .Camisas {
+    background-color: #1e1e1e !important;
+}
+
+.dark-mode .layout-vitrine {
+    background-color: #1e1e1e;
+}
+
+.dark-mode .filtro-cat h4 {
+    color: #e0e0e0 !important;
+}
+
+.dark-mode .cards-cat h1 {
+    color: #e0e0e0 !important;
+}
+
+.dark-mode .form-control {
+    background-color: #333;
+    color: #e0e0e0;
+    border-color: #555;
+}
+
+.dark-mode .form-range {
+    background-color: #333;
+}
+
+.dark-mode .form-range::-webkit-slider-thumb {
+    background: #e0e0e0;
+}
+
+.dark-mode .form-range::-moz-range-thumb {
+    background: #e0e0e0;
+}
+
+.dark-mode .form-range::-ms-thumb {
+    background: #e0e0e0;
+}
+
+/* Paginação */
+.dark-mode .pagination .page-link {
+    background-color: #2d2d2d;
+    color: #e0e0e0;
+    border-color: #444;
+}
+
+.dark-mode .pagination .page-item.disabled .page-link {
+    background-color: #2d2d2d;
+    color: #666;
+}
+
+.dark-mode .pagination .page-item.active .page-link {
+    background-color: #444;
+    border-color: #555;
+}
+
+.dark-mode .input-group .form-control {
+    background-color: #333;
+    color: #e0e0e0;
+    border-color: #555;
+}
+
+.dark-mode .input-group .btn-secondary {
+    background-color: #444;
+    border-color: #555;
+    color: #e0e0e0;
+}
+
+.dark-mode .card {
+    background-color: #2d2d2d;
+    border-color: #444;
+}
+
+.dark-mode .card-text,
+.dark-mode .fw-bold {
+    color: #e0e0e0 !important;
+}
+
+.dark-mode .shadow-sm {
+    box-shadow: 0 .125rem .25rem rgba(255, 255, 255, 0.075) !important;
+}
+
+.dark-mode .btn-outline-secondary {
+    border-color: #666;
+    color: #e0e0e0;
+}
+
+.dark-mode .btn-outline-secondary:hover {
+    background-color: #666;
+    color: #fff;
+}
+
+.dark-mode .btn-secondary {
+    background-color: #444;
+    border-color: #555;
+    color: #e0e0e0;
+}
+
+.dark-mode .btn-secondary:hover {
+    background-color: #555;
+}
+
+.dark-mode .link-carrinho {
+    color: #e0e0e0 !important;
+}
+
+.dark-mode .link-carrinho:hover {
+    color: #fff !important;
+}
+
+.dark-mode .btn-outline-secondary svg {
+    fill: #e0e0e0;
+}
+
+.dark-mode .filtro-cat {
+    background-color: #2d2d2d;
+    box-shadow: 0 0.125rem 0.25rem rgba(255, 255, 255, 0.075);
+}
+
+.dark-mode .filtro-cat h4 {
+    color: #e0e0e0;
+}
+
+.dark-mode .secao-categorias {
+    background-color: transparent !important;
+    padding: 2rem 0;
+}
+
+.dark-mode .cat-titulo,
+.dark-mode .categoria-link,
+.dark-mode .lista-categorias {
+    color: #000000 !important;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5); 
+}
+
+.dark-mode .categoria-link:hover {
+    color: #cccccc !important; /* Cinza claro para hover */
+    text-shadow: none;
+}
+
+.dark-mode .secao-categorias .container {
+    background: transparent !important;
+}

@@ -48,4 +48,49 @@
   height: 100%;
 }
 
+/* Modo escuro */
+.dark-mode .Camisas {
+    background-color: #343a40 !important;
+}
 
+.dark-mode .Camisas .card {
+    background-color: #2d2d2d;
+    border-color: #444;
+}
+
+.dark-mode .Camisas .card-body,
+.dark-mode .Camisas .card-text,
+.dark-mode .Camisas .fw-bold,
+.dark-mode .Camisas h1 {
+    color: #e0e0e0 !important;
+}
+
+.dark-mode .Camisas .btn-outline-secondary {
+    border-color: #666;
+    color: #e0e0e0;
+}
+
+.dark-mode .Camisas .btn-outline-secondary:hover {
+    background-color: #666;
+}
+
+.dark-mode .Camisas .link-carrinho {
+    color: #e0e0e0 !important;
+}
+
+.dark-mode .Camisas.bg-light {
+    background-color: #343a40 !important;
+}
+
+.carousel-item img.img-ajustada {
+    transition: transform 0.5s ease; 
+    transform-origin: center center; 
+}
+
+.carousel-item:hover img.img-ajustada {
+    transform: scale(1.05); 
+}
+
+.carousel-detalhes {
+    overflow: hidden;
+}

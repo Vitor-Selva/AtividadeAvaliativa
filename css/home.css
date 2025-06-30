@@ -185,3 +185,112 @@
     width: 35px;
     height: 35px;
 }
+
+/* Modo Escuro */
+.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+.dark-mode .minha-navbar,
+.dark-mode .offcanvas {
+    background-color: #1e1e1e !important;
+}
+
+.dark-mode .nav-link,
+.dark-mode .offcanvas-title,
+.dark-mode .cat-link,
+.dark-mode .card,
+.dark-mode .card-body,
+.dark-mode .card-text,
+.dark-mode .card-body p,
+.dark-mode .link-carrinho {
+    color: #e0e0e0 !important;
+}
+
+.dark-mode .card {
+    background-color: #2d2d2d !important;
+    border-color: #444 !important;
+}
+
+.dark-mode .novidades-album {
+    background-color: #1a1a1a !important;
+}
+
+.dark-mode .novidades {
+    border-color: #333 !important;
+}
+
+.dark-mode .btn-outline-secondary {
+    border-color: #666 !important;
+    color: #e0e0e0 !important;
+}
+
+.dark-mode .btn-outline-success {
+    color: #4caf50 !important;
+    border-color: #4caf50 !important;
+}
+
+.dark-mode .carousel-caption h5,
+.dark-mode .carousel-caption p {
+    color: #fff !important;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+.dark-mode .form-control,
+.dark-mode .form-range {
+    background-color: #333;
+    color: #e0e0e0;
+    border-color: #555;
+}
+
+.dark-mode .footer {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+}
+
+.dark-mode .text-body-secondary {
+    color: #b0b0b0 !important;
+}
+
+.dark-mode .border-top {
+    border-color: #444 !important;
+}
+
+.navbar-nav .btn-outline-dark {
+    padding: 0.25rem 0.5rem;
+    margin-left: 0.5rem;
+    border-color: #333;
+}
+
+.dark-mode .navbar-nav .btn-outline-dark {
+    border-color: #e0e0e0;
+    color: #e0e0e0;
+}
+
+.dark-mode .bg-body-tertiary {
+    background-color: #2d2d2d !important;
+}
+
+.dark-mode .card-body p,
+.dark-mode .card-text {
+    color: #e0e0e0 !important;
+}
+
+.dark-mode .cont-titulo-mais h1,
+.dark-mode .cont-titulo-mais h2 {
+    color: #e0e0e0 !important;
+}
+
+.dark-mode .offcanvas {
+    background-color: #1e1e1e !important;
+    color: #e0e0e0 !important;
+}
+
+.dark-mode .offcanvas-title {
+    color: #e0e0e0 !important;
+}
+
+.dark-mode .btn-close {
+    filter: invert(1);
+}   
